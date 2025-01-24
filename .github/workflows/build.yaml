@@ -22,6 +22,6 @@ jobs:
    -
      name : build and push
      uses: docker/login-action@v3
-     run:
+     run: |
         docker build -t gilad/TinderForFriends:latest
         docker push gilad/TInderForFriends:latest
