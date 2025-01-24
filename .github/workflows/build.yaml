@@ -1,0 +1,29 @@
+name : Build and deploy backend
+
+on:
+
+  push:
+
+    branches: [ main ]
+
+  jobs:
+   docker:
+   
+    runs on: ububtu-latest
+
+    steps:
+
+      name: checkout code
+      uses: actions/checkout@v2
+
+      name: login to DockerHub
+      uses: docker/login-action@v3
+        with:
+         username: ${{ github.actor }}
+         password: ${{ secrets.DOCKER_PASSWORD }}
+
+      name : build and push
+      uses: docker/login-action@v3
+        with:
+         push: true
+         tags: gilad/TInderForFriends:latest
