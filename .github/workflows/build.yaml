@@ -22,5 +22,5 @@ jobs:
    -
      name : build and push
      run: |
-        docker build -t gilad/TinderForFriends:latest .
-        docker push gilad/TInderForFriends:latest
+        docker build -t giladkhaytin/my-expo-dev:latest .
+        docker push giladkhaytin/my-expo-dev:latest
