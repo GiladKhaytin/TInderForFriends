@@ -3,14 +3,12 @@ name : Build and deploy backend
 on:
 
   push:
-
-    branches: [ main ]
+   branches: [ main ]
 
 jobs:
   docker:
    
    runs on: ububtu-latest
-
    steps:
 
      name: checkout code
