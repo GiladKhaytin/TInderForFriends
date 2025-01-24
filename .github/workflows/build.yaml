@@ -8,7 +8,7 @@ on:
 jobs:
   docker:
    
-   runs on: ububtu-latest
+   runs-on: ububtu-latest
    steps: 
    -
      name: checkout code
