@@ -31,4 +31,4 @@ runs:
       with:
         push: true
         tags: giladkhaytin/tinderforfriends:latest
-        context: inputs.name
+        context: ${{ inputs.name }}
