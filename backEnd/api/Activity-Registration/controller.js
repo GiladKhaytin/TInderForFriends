@@ -24,3 +24,4 @@ class ActivitiesRegistration extends CRUD {
 		}
 	}
 }
+module.exports = { ActivitiesRegistration };
